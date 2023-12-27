@@ -1,10 +1,13 @@
 import Counter from './components/counter/Counter';
 import CountTestOne from './components/countTestOne.tsx/CountTestOne';
 import CountTestOneChild from './components/countTestOne.tsx/count-child/CountTestOneChild';
-import Products from './components/products/Products';
+import Locations from "./components/locations/Locations"
+import Dogs from "./components/locations/Dogs";
 import './App.css';
+import AddTodo from './components/locations/Mutation';
 
 function App() {
+
   return (
     <div className="App">
       <div>
@@ -14,10 +17,15 @@ function App() {
           <CountTestOne />
           <CountTestOneChild />
         </div>
-        <h2>RTX Query Get Products</h2>
+        <h2>Aplollo Client</h2>
         <div>
-          <Products />
+          <Locations />
         </div>
+        <div>
+          {/* <Dogs /> */}
+          {<AddTodo />}
+        </div>
+        <div></div>
       </div>
     </div>
   );
